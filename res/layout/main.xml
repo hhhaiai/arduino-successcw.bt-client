@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <TextView android:id="@+id/Text0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="我的遥控器"
+    />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"       
+        >
+    <Button
+        android:id="@+id/ButtonSTBOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonSTBOpenClicked"
+        android:text="开/关IPTV" />
+
+	<Button
+	    android:id="@+id/ButtonTVOpen"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:onClick="onButtonTVOpenClicked"
+	    android:text="开/关电视" >
+	</Button>
+	</LinearLayout>
+	<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"       
+        >
+    <Button
+        android:id="@+id/ButtonTVAV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonTVAVClicked"
+        android:text="TV/AV" />
+
+	<Button
+	    android:id="@+id/ButtonTVVolUP"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:onClick="onButtonTVVolUPClicked"
+	    android:text="音量+" >
+	</Button>
+	<Button
+	    android:id="@+id/ButtonTVVolDown"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:onClick="onButtonTVVolDownClicked"
+	    android:text="音量-" >
+	</Button>
+	</LinearLayout>
+	<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"       
+        >
+    <Button
+        android:id="@+id/ButtonSTBzhibo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonSTBzhiboClicked"
+        android:text="直播" />
+
+	<Button
+	    android:id="@+id/ButtonSTBhuikan"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:onClick="onButtonSTBhuikanClicked"
+	    android:text="回看" >
+	</Button>
+	<Button
+	    android:id="@+id/ButtonSTBdianbo"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:onClick="onButtonSTBdianboClicked"
+	    android:text="点播" >
+	</Button>
+	<Button
+	    android:id="@+id/ButtonSTBxinxi"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:onClick="onButtonSTBxinxiClicked"
+	    android:text="信息" >
+	</Button>
+	</LinearLayout>
+		<LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"       
+        >
+    <Button
+        android:id="@+id/ButtonSTBup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onButtonSTBupClicked"
+        android:text="上" />
+
+	<Button
+	    android:id="@+id/ButtonSTBdown"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:onClick="onButtonSTBdownClicked"
+	    android:text="下" >
+	</Button>
+	<Button
+	    android:id="@+id/ButtonSTBleft"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:onClick="onButtonSTBleftClicked"
+	    android:text="左" >
+	</Button>
+	<Button
+	    android:id="@+id/ButtonSTBright"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:onClick="onButtonSTBrightClicked"
+	    android:text="右" >
+	</Button>
+	<Button
+	    android:id="@+id/ButtonSTBok"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:onClick="onButtonSTBokClicked"
+	    android:text="确定" >
+	</Button>
+	</LinearLayout>
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.26"
+        android:scrollbars="vertical" >
+
+	<TextView android:id="@+id/in"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    />
+    </ScrollView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+		<EditText  
+			android:id="@+id/Edit0" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_gravity="bottom">
+		</EditText>
+		<Button 
+			android:text="send" 
+			android:id="@+id/Button02" 
+			android:layout_width="wrap_content" 
+			android:layout_height="wrap_content"
+			android:onClick="onSendButtonClicked">
+		</Button>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"       
+        >
+       	<Button 
+			android:text="连接" 
+			android:id="@+id/Button03" 
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:onClick="onConnectButtonClicked">
+		</Button>
+		<Button 
+			android:text="保存" 
+			android:id="@+id/Button04" 
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:onClick="onSaveButtonClicked">
+		</Button>
+		<Button 
+			android:text="清空" 
+			android:id="@+id/Button05" 
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:onClick="onClearButtonClicked">
+		</Button>
+		<Button 
+			android:text="退出" 
+			android:id="@+id/Button06" 
+			android:layout_width="match_parent" 
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:onClick="onQuitButtonClicked">
+		</Button>
+    </LinearLayout>
+</LinearLayout>
